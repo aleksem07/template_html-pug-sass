@@ -1,0 +1,18 @@
+mixin breadcrumbs(text, href, mod)
+  li.breadcrumbs-item
+    if(href)
+      a.breadcrumbs-link(href=href class=mod ? 'breadcrumbs-current': "") #{text}
+    else
+      span.breadcrumbs-text #{text}
+
+
+ul.breadcrumbs
+  if pageClass === 'catalog-page'
+    +breadcrumbs('Главная', 'index.html')
+    +breadcrumbs('Каталог', href=pageClass === "catalog-page" ? false : 'catalog.html')
+    +breadcrumbs('Мужские часы', '', true)
+  if pageClass === 'card-page'
+    +breadcrumbs('Главная', 'index.html')
+    +breadcrumbs('Каталог', href=pageClass === "catalog-page" ? false : 'catalog.html')
+    +breadcrumbs('Мужские часы', href=pageClass === "catalog-page" ? false : 'catalog.html')
+    +breadcrumbs(title, '', true)

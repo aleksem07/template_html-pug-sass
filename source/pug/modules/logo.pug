@@ -1,0 +1,24 @@
+- var logo1x = "http://dummyimage.com/200/f1110dd&text=logo";
+- var logo2x = "http://dummyimage.com/200/ff11dd&text=logo";
+
+-var logoTablet1x = "http://dummyimage.com/200/ff00dd&text=logo";
+-var logoTablet2x = "http://dummyimage.com/200/ff11dd&text=logo";
+
+-var logoDesctop1x = "http://dummyimage.com/300/00ffdd&text=logo";
+-var logoDesctop2x = "http://dummyimage.com/300/11ffdd&text=logo";
+
+a.header__logo.logo(href=pageClass === 'index-page' ? false : 'index.html')
+  .logo__img
+    picture
+      source(media='(min-width: 1100px)' srcset=`
+      ${logoDesctop1x} 1x,
+      ${logoDesctop2x} 2x'`)
+      source(media='(min-width: 768px)' srcset=`
+      ${logoTablet1x} 1x,
+      ${logoTablet2x} 2x'`)
+      img(src=logo1x  srcset=`
+      ${logo1x} 1x,
+      ${logo2x} 2x'`
+      width='100px' height='100px' alt='Логотип компании')
+  p.logo__title title
+  p.logo__tagline text

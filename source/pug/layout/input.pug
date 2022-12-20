@@ -1,0 +1,12 @@
+mixin input(type, name, text, checked)
+  if type === 'checkbox'
+    .catalog-filter__box
+      input.catalog-filter__checkbox(name=name id=name checked=checked type=type)
+      label.catalog-filter__label(for=name) #{text}
+  if type === 'radio'
+    .catalog-filter__box.catalog-filter__box--radio
+      input.catalog-filter__radio&attributes(attributes)(value=name id=name checked=checked type=type )
+      label.catalog-filter__label(for=name) #{text}
+      
+          //-  +input('checkbox', 'education', 'Образование', true)
+            +input('radio', 'news-books', 'Новинки', true)(name= 'status')

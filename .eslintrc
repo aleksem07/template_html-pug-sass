@@ -1,0 +1,29 @@
+root: true
+
+parserOptions:
+  ecmaVersion: 2018
+  sourceType: "module"
+
+env:
+  es2017: true
+  browser: true
+
+extends:
+  "eslint:recommended"
+
+  {
+  "rules": {
+    "no-console": 1,
+    "quotes": ["error", "double"]
+  },
+
+  "overrides": [
+    {
+      "files": ["bin/*.js", "lib/*.js"],
+      "excludedFiles": "*.test.js",
+      "rules": {
+        "quotes": ["error", "single"]
+      }
+    }
+  ]
+}

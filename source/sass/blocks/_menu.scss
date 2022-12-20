@@ -1,0 +1,36 @@
+/* menu */
+
+.menu-nav {
+  color: red;
+}
+
+.menu-nav {
+  display: flex;
+}
+/* list */
+
+.menu-nav__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  font-size: 12px;
+  align-self: center;
+}
+
+/* item */
+
+.menu-nav__item {
+  text-transform: uppercase;
+}
+
+/* link */
+
+.menu-nav__link {
+}
+
+.menu-site__link--active {
+  padding-bottom: 3px;
+  font-weight: bold;
+  border-bottom: 2px solid grey;
+}

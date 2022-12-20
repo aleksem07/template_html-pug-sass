@@ -1,0 +1,64 @@
+{
+  "name": "{{aleksem07}}",
+  "private": true,
+  "description": "Стартовый шаблон html https://github.com/aleksem07",
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "1.0.0",
+    "autoprefixer": "10.2.5",
+    "browser-sync": "2.26.14",
+    "del": "^6.0.0",
+    "eslint": "7.18.0",
+    "eslint-config-htmlacademy": "2.0.0",
+    "gh-pages": "^4.0.0",
+    "gulp": "^4.0.2",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-csso": "^4.0.1",
+    "gulp-file-include": "^2.3.0",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "7.1.0",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-plumber": "1.2.1",
+    "gulp-postcss": "9.0.0",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "3.0.0",
+    "gulp-svgstore": "^9.0.0",
+    "gulp-webp": "^4.0.1",
+    "imagemin": "^8.0.1",
+    "postcss": "^8.4.19",
+    "postcss-less": "^6.0.0",
+    "sass": "^1.53.0",
+    "stylelint": "^14.14.0",
+    "stylelint-config-standard": "^29.0.0"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/sass/**/*.scss\"",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp build",
+    "start": "gulp",
+    "pug": "pug ./source/pug/*.pug --pretty -w -o ./source"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "source/*.html",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/sass/**/*.scss"
+  ],
+  "engines": {
+    "node": "^12 || ^14"
+  },
+  "dependencies": {
+    "postcss-scss": "^4.0.6",
+    "pug": "^3.0.2",
+    "pug-cli": "1.0.0-alpha6"
+  }
+}

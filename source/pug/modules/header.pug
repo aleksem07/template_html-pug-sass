@@ -1,0 +1,32 @@
+mixin site-nav(title, href)
+  li.menu-nav__item.menu-site__item
+    if href
+      a.menu-nav__link.menu-site__link(href=href rel="noopener noreferrer") #{title}
+    else
+      a.menu-nav__link.menu-site__link.menu-site__link--active #{title}
+
+mixin user-nav(title, svgName, href)
+  li.menu-nav__item.menu-user__item
+    a.menu-nav__link.menu-user__link(href=href rel="noopener noreferrer")
+      h2.visually-hidden #{title}
+      <svg width="17" height="17" viewBox="0 0 17 17">
+      <use xlink:href="../img/sprite.svg##{svgName}"></use>
+      </svg>
+
+header.header
+  include logo
+  nav.header__menu.menu-nav
+    button.menu-nav__button.menu__button--open(type='button' aria-expanded='false' aria-controls='menu-nav__list')
+      .
+        <svg class="menu-nav__icon" aria-hidden="true" width="32" height="32">
+            <use class="menu-nav__icon-menu" href="img/sprite.svg#menu"></use>
+            <use class="menu-nav__icon-cross" href="img/sprite.svg#cross"></use>
+        </svg>
+
+    ul.menu-nav__list.menu-site#menu-nav__list
+      +site-nav('Главная', href=pageClass === 'index-page' ? false : 'index.html')
+      +site-nav('Каталог', href=pageClass === 'catalog-page' ? false : 'catalog.html')
+
+    ul.menu-nav__list.menu-user#menu-nav__list
+      +user-nav('Поиск', 'search', '#')
+      +user-nav('Корзина', 'card', '#')

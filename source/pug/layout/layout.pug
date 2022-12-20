@@ -1,0 +1,49 @@
+block constant
+- var title = "Name1"
+- var description = "description1"
+  //- - var pathContentImg = 'images/content/'
+  //- - var pathCommonImg = 'images/common/'
+
+block variables
+
+doctype html
+html.page(lang='ru-RU')
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0, viewport-fit=cover")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+    title #{title}
+    <meta name="description" content= #{description}>
+
+    //- шрифты
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    link(href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet")
+    //- link(rel="preload" href="/fonts/roboto/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin)
+    //- link(rel="preload" href="/fonts/roboto/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin)
+
+    link(rel="shortcut icon" href="favicon.ico" type="image/x-icon")
+    link(rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png")
+    link(rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png")
+    link(rel="manifest" href="img/favicon/site.webmanifest")
+    //- favicon
+      link(rel="icon" href="img/favicon/favicon-32.svg" type="image/svg+xml")
+
+
+    link(rel="preload" href="css/style.min.css" as="style")
+    link(rel="stylesheet" type="text/css" href="css/normalize.css")
+    link(rel="stylesheet" type="text/css" href="css/style.css")
+    //- link(rel="stylesheet" href="css/grid.css")
+    //- link(rel="stylesheet" href="css/outline.css")
+
+  body.page__body
+
+      include ../modules/header
+
+      block content
+
+      include ../modules/footer
+
+  script(src="js/menuToggle.js")
