@@ -5,6 +5,10 @@
   "rules": {
     "declaration-no-important": true,
     "indentation": [2, {"ignore": ["inside-parens"]}],
-    "no-duplicate-selectors": true
+    "no-duplicate-selectors": true,
+    "selector-class-pattern": null,
+    "import-notation": null,
+    "property-no-vendor-prefix": null,
+    "no-descending-specificity": null
   }
 }

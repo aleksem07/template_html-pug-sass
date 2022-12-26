@@ -15,9 +15,9 @@
 - **npm test** запускает тест _editorconfig_ и _stylelint_
   - _editorconfig_ проверяет отступы, концы строк, пустые строки во всех файлах;
   - _stylelint_ проверяет ошибки препроцессорных файлов по кодгайду.
+- **npm run pug** watcher pug
 - **npm start** запускает browsersync и следит за изменениями стилей и вёрстки;
 - **npm run build** компиляция в /build
-- **npm run pug** watcher pug
 
 ---
 
@@ -57,3 +57,8 @@
 - logo2x
 - favicon
 - readme mixin
+- meta description
+- footer developed info
+- meta property=og, meta name twitter=, link rel=alternate
+- увеличение/уменьшение шрифта
+- для слабовидящих

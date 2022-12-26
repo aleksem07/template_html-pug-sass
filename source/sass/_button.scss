@@ -1,6 +1,6 @@
 /* button */
 
-/*menu */
+/* menu */
 
 .menu-nav__button {
   @media (width < ($tablet-width + 1px)) {
@@ -34,6 +34,7 @@
 .menu__button--open .menu-nav__icon-cross {
   display: block;
 }
+
 .menu-nav__icon-cross,
 .menu__button--open .menu-nav__icon-menu {
   display: none;
