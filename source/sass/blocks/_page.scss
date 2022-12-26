@@ -3,7 +3,7 @@
 .page {
   height: 100%;
   font-size: 20px;
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   font-weight: 400;
   line-height: 20px;
 }
@@ -14,13 +14,11 @@
   display: flex;
   flex-direction: column;
   min-width: $min-width;
-  max-width: $desktop-width;
   min-height: 100%;
   color: $basic_font;
 
   @media (min-width: $tablet-width) {
     min-width: $tablet-width;
-    max-width: $desktop-width;
   }
 }
 

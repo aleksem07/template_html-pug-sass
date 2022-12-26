@@ -9,6 +9,12 @@ a {
   text-decoration: none;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 *,
 *::before,
 *::after {
@@ -57,7 +63,7 @@ h6 {
 }
 
 // центрирование контейнера
-[class*=__container] {
+[class*="__container"] {
   max-width: 87.5rem;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;

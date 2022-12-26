@@ -2,7 +2,7 @@
 $min-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1100px;
-$mobile-width-only: 767px;
+$mobile-width-only: ($tablet-width - 1);
 
 //global
 @import "_color";

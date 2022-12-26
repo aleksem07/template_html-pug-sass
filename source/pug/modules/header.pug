@@ -22,7 +22,6 @@ header.header
             <use class="menu-nav__icon-menu" href="img/sprite.svg#menu"></use>
             <use class="menu-nav__icon-cross" href="img/sprite.svg#cross"></use>
         </svg>
-
     ul.menu-nav__list.menu-site#menu-nav__list
       +site-nav('Главная', href=pageClass === 'index-page' ? false : 'index.html')
       +site-nav('Каталог', href=pageClass === 'catalog-page' ? false : 'catalog.html')
