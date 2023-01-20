@@ -15,7 +15,6 @@ extends:
   "rules": {
     "no-console": 1,
     "quotes": ["error", "double"],
-    "kebabcase": false
   },
 
   "overrides": [
