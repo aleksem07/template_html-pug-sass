@@ -2,7 +2,8 @@
 
 .header {
   margin-inline: auto;
-  min-width: $mobile-width-only;
+  min-width: $min-width;
+  width: 100%;
   max-width: $desktop-width;
   position: relative;
   display: flex;

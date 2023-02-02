@@ -2,4 +2,19 @@
 
 .footer {
   margin-top: auto;
+  margin-inline: auto;
+
+  min-width: $min-width;
+  width: 100%;
+  max-width: $desktop-width;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social__list {
+  display: flex;
+  justify-content: space-between;
 }
