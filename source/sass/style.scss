@@ -5,14 +5,17 @@ $desktop-width: 1100px;
 $mobile-width-only: ($tablet-width - 1);
 
 //global
+@import "_normalize";
 @import "_color";
-@import "_global";
 @import "_fonts";
+@import "_global";
 @import "_button";
 
 //blocks
 @import "blocks/_page";
+
 @import "blocks/_header";
 @import "blocks/_logo";
 @import "blocks/_menu";
+
 @import "blocks/_footer";

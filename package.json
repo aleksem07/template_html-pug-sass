@@ -1,6 +1,7 @@
 {
   "name": "aleksem07",
   "private": true,
+  "homepage": "https://github.com/aleksem07/als_template_html-pug-less",
   "description": "Стартовый шаблон html https://github.com/aleksem07",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
@@ -33,6 +34,8 @@
     "stylelint-config-standard": "^29.0.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\"",
     "test": "npm run editorconfig && npm run stylelint",

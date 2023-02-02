@@ -18,9 +18,17 @@
 - **npm run pug** watcher pug
 - **npm start** запускает browsersync и следит за изменениями стилей и вёрстки;
 - **npm run build** компиляция в /build
+- **npm run deploy** запускает build, затем deploy gh-pages
 
 ---
 
+### Gh-pages
+
+В package.json указать путь homepage
+напр "homepage": "https://github.com/aleksem07/als_template_html-pug-less",
+
+запуск **npm run deploy**
+---
 ### Структура
 
 - .github/workflows/check.yml - запуск тестов на github
