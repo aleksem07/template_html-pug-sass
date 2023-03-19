@@ -2,15 +2,39 @@
 
 .header {
   margin-inline: auto;
+  padding-inline: 3%;
+  padding-block: 2.25rem;
+
   min-width: $min-width;
   width: 100%;
   max-width: $desktop-width;
+
   position: relative;
   display: flex;
+  column-gap: 50px;
   justify-content: space-between;
   align-items: center;
+
+  background-color: rgb(249, 255, 161);
 }
 
-.header__logo {
+.header__phone {
+  margin-top: 4px;
   margin-right: auto;
+  position: relative;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 125%;
+
+  &::before {
+    content: url('');
+    background-image: url('../../img/icons/phone.svg');
+    background-size: 20px 21px;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    top: 0;
+    left: -25px;
+  }
 }

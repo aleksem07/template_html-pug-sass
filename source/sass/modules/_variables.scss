@@ -1,1 +1,6 @@
+$min-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1280px;
+$mobile-width-only: ($tablet-width - 1);
+
 $wrapper-inline: 3%;

@@ -1,13 +1,8 @@
-mixin social(svg, title, href='#')
-  li.social__item
-    span.visually-hidden #{title}
-    a.social__link(href=href)
-    svg(width='26.5' height="26.5" viewBox="0 0 26.5 26.5")
-      .
-        <use xlink:href="img/sprite.svg##{svg}"></use>
+include ../mixins/mixins
 
 footer.footer
   .footer__container
+
     ul.footer__list
       li.footer__item
         a(href='https://github.com/aleksem07' target='_blank') © &nbsp; 2022 &nbsp; github
@@ -21,3 +16,5 @@ footer.footer
           +social('tw', 'Twitter')
           +social('pinterest', 'Pinterest')
 
+  .copyright
+    span &#169; Developed by aleksem07, 2023

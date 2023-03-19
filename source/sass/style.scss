@@ -1,9 +1,5 @@
 @use "./abstract" as *;
-//viewports
-$min-width: 320px;
-$tablet-width: 768px;
-$desktop-width: 1100px;
-$mobile-width-only: ($tablet-width - 1);
+@use "./modules" as *;
 
 //global
 @import "_normalize";

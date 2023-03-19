@@ -7,9 +7,22 @@
   min-width: $min-width;
   width: 100%;
   max-width: $desktop-width;
+  min-height: 150px;
+  background-color: rgb(161, 249, 255);
+}
+
+.footer__container {
+  padding-top: 66px;
+  padding-bottom: 52px;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer__list {
+  padding-inline: $wrapper-inline;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -17,4 +30,19 @@
 .social__list {
   display: flex;
   justify-content: space-between;
+}
+
+//colpyright
+.copyright {
+  margin-top: auto;
+  padding-block: 20px;
+  text-align: center;
+  background-color: $bg_copyright;
+}
+
+.copyright span {
+  color: $basic_white;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 200%;
 }

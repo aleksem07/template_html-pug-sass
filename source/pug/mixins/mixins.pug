@@ -13,6 +13,22 @@ mixin social-link(title, svgName, href)
       <use xlink:href="../img/sprite.svg##{svgName}"></use>
       </svg>
 
+mixin user-nav(title, svgName, href)
+  li.menu-nav__item.menu-user__item
+    a.menu-nav__link.menu-user__link(href=href rel="noopener noreferrer")
+      h2.visually-hidden #{title}
+      <svg width="17" height="17" viewBox="0 0 17 17">
+      <use xlink:href="../img/sprite.svg##{svgName}"></use>
+      </svg>
+
+mixin social(svg, title, href='#')
+  li.social__item
+    span.visually-hidden #{title}
+    a.social__link(href=href)
+    svg(width='26.5' height="26.5" viewBox="0 0 26.5 26.5")
+      .
+        <use xlink:href="img/sprite.svg##{svg}"></use>
+
 mixin button(text)
   button.button(type='button')&attributes(attributes)
     span.button__text #{text}
