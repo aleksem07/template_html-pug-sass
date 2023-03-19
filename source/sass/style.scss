@@ -1,3 +1,4 @@
+@use "./abstract" as *;
 //viewports
 $min-width: 320px;
 $tablet-width: 768px;
@@ -6,16 +7,14 @@ $mobile-width-only: ($tablet-width - 1);
 
 //global
 @import "_normalize";
-@import "_color";
-@import "_fonts";
 @import "_global";
-@import "_button";
+@import "components/_button";
 
 //blocks
 @import "blocks/_page";
 
 @import "blocks/_header";
-@import "blocks/_logo";
-@import "blocks/_menu";
+@import "components/_logo";
+@import "blocks/_nav";
 
 @import "blocks/_footer";

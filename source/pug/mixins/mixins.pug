@@ -1,0 +1,18 @@
+mixin site-nav(title, href)
+  li.menu-nav__item.menu-site__item
+    if href
+      a.menu-nav__link.menu-site__link(href=href rel="noopener noreferrer") #{title}
+    else
+      a.menu-nav__link.menu-site__link.menu-site__link--active #{title}
+
+mixin social-link(title, svgName, href)
+  li.social__item&attributes(attributes)
+    a.menu-nav__link.menu-user__link(href=href rel="noopener noreferrer")
+      h2.visually-hidden #{title}
+      <svg width="20" height="20" viewBox="0 0 19 19">
+      <use xlink:href="../img/sprite.svg##{svgName}"></use>
+      </svg>
+
+mixin button(text)
+  button.button(type='button')&attributes(attributes)
+    span.button__text #{text}
