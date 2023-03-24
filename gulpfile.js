@@ -20,21 +20,30 @@ const pug = require('pug');
 // Styles
 
 const styles = () => {
-  return (
-    gulp
-      .src('source/sass/**/*.scss')
-      .pipe(plumber())
-      .pipe(sourcemap.init())
-      .pipe(sass())
-      // .pipe(gulp.src('source/css/**/*.css')) //all css
-      .pipe(postcss([autoprefixer()]))
-      .pipe(sourcemap.write('.'))
-      // .pipe(gulp.dest('build/css')) // style.css
-      .pipe(cssmin())
-      .pipe(rename({ suffix: '.min' }))
-      .pipe(gulp.dest('build/css')) //style.min.scc
-      .pipe(sync.stream())
-  );
+  return gulp
+    .src('source/sass/*.scss')
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(sass())
+    .pipe(postcss([autoprefixer()]))
+    .pipe(sourcemap.write('.'))
+    .pipe(gulp.dest('build/css')) // style.css
+    .pipe(cssmin())
+    .pipe(sync.stream());
+};
+
+exports.styles = styles;
+
+const stylesBuild = () => {
+  return gulp
+    .src('source/sass/*.scss')
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(sass())
+    .pipe(postcss([autoprefixer()]))
+    .pipe(cssmin())
+    .pipe(gulp.dest('build/css'))
+    .pipe(sync.stream());
 };
 
 exports.styles = styles;
@@ -206,7 +215,7 @@ const build = gulp.series(
   clean,
   copyBuild,
   optimizeImages,
-  gulp.parallel(styles, html, scripts, sprite, createWebp)
+  gulp.parallel(stylesBuild, html, scripts, sprite, createWebp)
 );
 
 exports.build = build;

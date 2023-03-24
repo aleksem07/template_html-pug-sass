@@ -29,15 +29,22 @@
     "imagemin": "^8.0.1",
     "postcss": "^8.4.19",
     "postcss-less": "^6.0.0",
+    "prettier": "^2.8.7",
     "sass": "^1.53.0",
-    "stylelint": "^14.14.0",
-    "stylelint-config-standard": "^29.0.0"
+    "stylelint": "^13.3.3",
+    "stylelint-config-airbnb": "0.0.0",
+    "stylelint-config-idiomatic-order": "^8.1.0",
+    "stylelint-config-prettier": "^8.0.1",
+    "stylelint-order": "^4.0.0",
+    "stylelint-prettier": "^1.1.2",
+    "stylelint-scss": "^3.17.1"
   },
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\"",
+    "stylelint:fix": "stylelint '**/*{.css,.scss}' --fix",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
     "start": "gulp",
@@ -59,6 +66,16 @@
   "engines": {
     "node": "^12 || ^14"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+},
+"lint-staged": {
+  "*.(css|scss)": [
+    "stylelint --fix"
+  ]
+},
   "dependencies": {
     "postcss-scss": "^4.0.6",
     "pug": "^3.0.2",
