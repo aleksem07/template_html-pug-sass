@@ -2,8 +2,8 @@
 
 .logo {
   display: grid;
-  grid-template-columns: min-content 1fr;
   column-gap: 8px;
+  grid-template-columns: min-content 1fr;
 }
 
 .logo__img {
