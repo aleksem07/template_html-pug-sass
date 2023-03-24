@@ -27,8 +27,8 @@
 В package.json указать путь homepage
 напр "homepage": "https://github.com/aleksem07/als_template_html-pug-less",
 
-запуск **npm run deploy**
----
+## запуск **npm run deploy**
+
 ### Структура
 
 - .github/workflows/check.yml - запуск тестов на github
@@ -62,6 +62,7 @@
 - 404 page
 - fix build/css
 - fonts
+- add mixin title h2
 - logo2x
 - favicon
 - readme mixin

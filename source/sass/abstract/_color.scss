@@ -1,14 +1,17 @@
 /* color */
+// darken($color, 15%), lighten($color, 15%)
+// saturate($color, 15%), dsaturate($color, 15%)
+// grayscale($color)
+// mix($color1, $color2, weight: 50%)
+// complement($color)
 
 $basic_font: #555;
 $basic_font--title: #141414;
 $basic_white: #fff;
-$basic_white--alpha15: rgba(255,255,255,0.15);
+$basic_white--alpha15: rgba(255, 255, 255, 0.15);
 
-$bg_button: #5C8692;
-$bg_dark: #1E2C30;
-$bg_copyright: #111E22;
+$bg_button: #5c8692;
+$bg_dark: #1e2c30;
+$bg_copyright: #111e22;
 
-$contrast: #EB9591;
-
-
+$contrast: #eb9591;

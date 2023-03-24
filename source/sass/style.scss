@@ -1,16 +1,15 @@
-@use "./abstract" as *;
-@use "./modules" as *;
+@use './abstract' as *;
 
 //global
-@import "_normalize";
-@import "_global";
-@import "components/_button";
+@import 'base/_normalize';
+@import 'base/_global';
+@import 'components/_button';
 
 //blocks
-@import "blocks/_page";
+@import 'layout/_page';
 
-@import "blocks/_header";
-@import "components/_logo";
-@import "blocks/_nav";
+@import 'layout/_header';
+@import 'components/_logo';
+@import 'blocks/_nav';
 
-@import "blocks/_footer";
+@import 'layout/_footer';
