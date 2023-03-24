@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Главная страница</title><meta name="description" content = ''>
+<link rel="preload" href="css/style.min.css" as="style">
+<link rel="stylesheet" type="text/css" href="css/style.css" >
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
     <link rel="manifest" href="img/favicon/manifest.webmanifest">
-    <link rel="preload" href="css/style.min.css" as="style">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="header"><a class="header__logo logo">
@@ -30,13 +30,14 @@
           </picture>
         </div>
         <p class="logo__title">title</p>
-        <p class="logo__tagline">text</p></a>
+        <p class="logo__tagline">text</p></a><a class="header__phone" href="tel:+79611711828">+79001001122</a>
       <nav class="header__menu menu-nav">
         <button class="menu-nav__button menu__button--open" type="button" aria-expanded="false" aria-controls="menu-nav__list">
           <svg class="menu-nav__icon" aria-hidden="true" width="32" height="32">
               <use class="menu-nav__icon-menu" href="img/sprite.svg#menu"></use>
               <use class="menu-nav__icon-cross" href="img/sprite.svg#cross"></use>
           </svg>
+          
         </button>
         <ul class="menu-nav__list menu-site" id="menu-nav__list">
               <li class="menu-nav__item menu-site__item"><a class="menu-nav__link menu-site__link menu-site__link--active">Главная</a>
@@ -88,6 +89,7 @@
           </li>
         </ul>
       </div>
+      <div class="copyright"><span>&#169; Developed by aleksem07, 2023</span></div>
     </footer>
   </body>
   <script src="js/main.js" type="module"></script>

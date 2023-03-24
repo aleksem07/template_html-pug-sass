@@ -1,21 +1,13 @@
-//viewports
-$min-width: 320px;
-$tablet-width: 768px;
-$desktop-width: 1100px;
-$mobile-width-only: ($tablet-width - 1);
+@use './abstract' as *;
 
 //global
-@import "_normalize";
-@import "_color";
-@import "_fonts";
-@import "_global";
-@import "_button";
+@import 'base/_normalize';
+@import 'base/_global';
+@import 'components/_button';
 
 //blocks
-@import "blocks/_page";
-
-@import "blocks/_header";
-@import "blocks/_logo";
-@import "blocks/_menu";
-
-@import "blocks/_footer";
+@import 'layout/_page';
+@import 'layout/_header';
+@import 'components/_logo';
+@import 'blocks/_nav';
+@import 'layout/_footer';

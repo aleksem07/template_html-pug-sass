@@ -1,15 +1,15 @@
 @font-face {
-  font-weight: 400;
-  font-family: "Montserrat";
+  font-family: Montserrat;
   font-style: normal;
-  src: url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: 400;
+  src: url('../fonts/Montserrat-Regular.woff') format('woff');
 }
 
 @font-face {
-  font-weight: 700;
-  font-family: "Montserrat";
+  font-family: Montserrat;
   font-style: normal;
-  src: url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: 700;
+  src: url('../fonts/Montserrat-Bold.woff') format('woff');
 }
 
 html {
@@ -25,7 +25,7 @@ html {
 html,
 body {
   margin: 0;
-  font-family: "Montserrat", "Arial", sans-serif;
+  font-family: Montserrat, Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
 }
@@ -46,8 +46,8 @@ main::before {
 main,
 header,
 footer {
-  background-color: #f3faff;
   border: 2px solid #7fc1ff;
+  background-color: #f3faff;
 }
 
 nav,
@@ -55,8 +55,8 @@ section,
 article,
 aside,
 form {
-  background-color: #f9f7ff;
   border: 2px solid #9779ec;
+  background-color: #f9f7ff;
 }
 
 nav::before,
@@ -70,42 +70,41 @@ aside::before {
 h1,
 h2,
 h3,
-h3,
 h4,
 h6 {
-  font-size: 18px;
-  background-color: #ffffff;
   border: 2px solid #ff994f;
+  background-color: #fff;
+  font-size: 18px;
 }
 
 h1::before {
-  content: "h1";
   color: #ff994f;
+  content: 'h1';
 }
 
 h2::before {
-  content: "h2";
   color: #ff994f;
+  content: 'h2';
 }
 
 h3::before {
-  content: "h3";
   color: #ff994f;
+  content: 'h3';
 }
 
 h4::before {
-  content: "h4";
   color: #ff994f;
+  content: 'h4';
 }
 
 h5::before {
-  content: "h5";
   color: #ff994f;
+  content: 'h5';
 }
 
 h6::before {
-  content: "h6";
   color: #ff994f;
+  content: 'h6';
 }
 
 img,
@@ -122,8 +121,8 @@ dl,
 dt,
 dd,
 li {
-  background-color: #ffffff;
   border: 2px solid #f36dff;
+  background-color: #fff;
 }
 
 img,
@@ -134,23 +133,23 @@ video {
 
 p::before {
   color: #f36dff;
-  content: "p";
+  content: 'p';
 }
 
 blockquote::before {
   color: #f36dff;
-  content: "blockquote";
+  content: 'blockquote';
 }
 
 address::before {
   color: #f36dff;
-  content: "address";
+  content: 'address';
 }
 
 fieldset::before {
-  color: #f36dff;
-  content: "fieldset";
   left: 0;
+  color: #f36dff;
+  content: 'fieldset';
 }
 
 * {
@@ -170,94 +169,94 @@ fieldset::before {
   position: absolute;
   top: 8px;
   left: 10px;
-  font-weight: 700;
   font-size: 11px;
-  line-height: 10px;
+  font-weight: 700;
   letter-spacing: 0.04em;
+  line-height: 10px;
 }
 
 html::before {
-  content: "html";
+  content: 'html';
 }
 
 body::before {
-  content: "body";
+  content: 'body';
 }
 
 main::before {
-  content: "main";
+  content: 'main';
 }
 
 header::before {
-  content: "header";
+  content: 'header';
 }
 
 footer::before {
-  content: "footer";
+  content: 'footer';
 }
 
 section::before {
-  content: "section";
+  content: 'section';
 }
 
 article::before {
-  content: "article";
+  content: 'article';
 }
 
 form::before {
-  content: "form";
+  content: 'form';
 }
 
 aside::before {
-  content: "aside";
+  content: 'aside';
 }
 
 nav::before {
-  content: "nav";
+  content: 'nav';
 }
 
 ul::before {
-  content: "ul";
   color: #f36dff;
+  content: 'ul';
 }
 
 li::before {
-  content: "li";
   color: #f36dff;
+  content: 'li';
 }
 
 dl::before {
-  content: "dl";
   color: #f36dff;
+  content: 'dl';
 }
 
 dt::before {
-  content: "dt";
   color: #f36dff;
+  content: 'dt';
 }
 
 dd::before {
-  content: "dd";
   color: #f36dff;
+  content: 'dd';
 }
 
 a::before {
-  content: "a";
   color: #f36dff;
+  content: 'a';
 }
 
 cite::before {
-  content: "cite";
   color: #f36dff;
+  content: 'cite';
 }
 
 time::before {
-  content: "time";
   color: #f36dff;
+  content: 'time';
 }
 
 img {
-  background: rgba(243, 109, 255, 0.1);
+  background: rgb(243 109 255 / 10%);
 }
 
 a {

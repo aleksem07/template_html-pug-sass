@@ -1,0 +1,28 @@
+$min-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1280px;
+$mobile-width-only: ($tablet-width - 1);
+
+// .block1 {
+// padding: 10px;
+// @media screen and (max-width: $desktop-width) {
+// padding: 20px;
+// }
+// }
+
+$font-first: georgia, sans-serif;
+$font-second: arial, sans-serif;
+
+$wrapper-inline: calc(40px / 1280px * 100%);
+
+//font-size
+$_12: 0.75rem;
+$_13: 0.8125rem;
+$_14: 0.875rem;
+$_15: 0.9375rem;
+$_16: 1rem;
+$_20: 1.25rem;
+$_25: 1.5625rem;
+$_32: 2rem;
+$_35: 2.1875rem;
+$_44: 2.75rem;

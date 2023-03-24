@@ -1,0 +1,16 @@
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+//.box { @include transform(rotate(30deg)); }
+
+@mixin flex($align: center, $wrap: wrap) {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: $align;
+  justify-content: $align;
+}
+
+//.block {@include flex(flex-start, $wrap: no-wrap);}

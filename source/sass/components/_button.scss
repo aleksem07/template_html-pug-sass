@@ -4,13 +4,13 @@
 
 .menu-nav__button {
   @media (width < ($tablet-width + 1px)) {
-    order: 1;
-    margin: 0;
-    padding: 0;
     display: block;
-    cursor: pointer;
+    order: 1;
+    padding: 0;
     border: none;
+    margin: 0;
     background-color: transparent;
+    cursor: pointer;
   }
 
   @media (width > ($tablet-width - 1px)) {
