@@ -1,5 +1,6 @@
-@forward './color';
+@forward './variables';
+@forward './colors';
 @forward './fonts';
 @forward './mixins';
-@forward './variables';
 @forward './extend';
+@forward './breakpoints';

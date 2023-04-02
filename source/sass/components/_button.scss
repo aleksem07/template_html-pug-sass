@@ -1,9 +1,16 @@
 /* button */
 
+.button {
+  width: 100%;
+  max-width: max-content;
+
+  transition: all 0.3s easy;
+}
+
 /* menu */
 
 .menu-nav__button {
-  @media (width < ($tablet-width + 1px)) {
+  @include media('max', 'md') {
     display: block;
     order: 1;
     padding: 0;
@@ -13,16 +20,16 @@
     cursor: pointer;
   }
 
-  @media (width > ($tablet-width - 1px)) {
+  @include media('min', 'md') {
     display: none;
   }
 }
 
 /* menu-icon */
 
-@media (width < ($tablet-width + 1px)) {
+@include media('max', 'md') {
   .menu-nav__icon {
-    stroke: $basic_font;
+    stroke: $color-basic_font;
   }
 
   .menu-nav__icon:hover {

@@ -1,0 +1,20 @@
+/* color */
+// darken($color, 15%), lighten($color, 15%)
+// saturate($color, 15%), dsaturate($color, 15%)
+// grayscale($color)
+// mix($color1, $color2, weight: 50%)
+// complement($color)
+
+$color-light: #fff;
+$color-light--alpha15: rgb(255 255 255 / 15%);
+$color-dark: #000;
+$color-dark--alpha15: rgb(0 0 0 / 15%);
+
+$color-basic_font: #555;
+$color-basic_font--title: #141414;
+
+$color-bg_button: #5c8692;
+$color-bg_dark: #1e2c30;
+$color-bg_copyright: #111e22;
+
+$color-contrast: #eb9591;

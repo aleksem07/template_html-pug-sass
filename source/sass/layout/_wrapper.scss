@@ -1,0 +1,12 @@
+// центрирование контейнера
+[class*='__container'] {
+  max-width: 87.5rem;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  margin: 0 auto;
+}
+
+.wrapper {
+  max-width: $width-desktop;
+  margin-inline: auto;
+}

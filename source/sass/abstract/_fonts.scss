@@ -3,12 +3,15 @@
 //&display=swap - добавить при подключении через плагин
 // @import url("https://fonts.googleapis.com/css?family=Oswald:400,500&display=swap");
 
+$font-family-default: Roboto, 'Open Sans', sans-serif;
+$font-family-second: Roboto, 'Open Sans', sans-serif;
+
 @font-face {
   font-display: swap;
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
-  src: url('/fonts/roboto/Roboto-Regular.woff2') format('woff2'),
+  src: local('Roboto'), url('/fonts/roboto/Roboto-Regular.woff2') format('woff2'),
     url('/fonts/roboto/Roboto-Regular.woff') format('woff');
 }
 
@@ -17,6 +20,6 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  src: url('/fonts/roboto/Roboto-Medium.woff2') format('woff2'),
+  src: local('Roboto'), url('/fonts/roboto/Roboto-Medium.woff2') format('woff2'),
     url('/fonts/roboto/Roboto-Medium.woff') format('woff');
 }

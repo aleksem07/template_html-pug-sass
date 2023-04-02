@@ -1,0 +1,23 @@
+@use './variables' as *;
+$sizes: (
+  'xs': $width-mobile-small,
+  'sm': 576px,
+  'md': $width-tablet,
+  'lg': 992px,
+  'xl': $width-desktop,
+);
+
+@mixin media($minmax, $media) {
+  @each $size, $resolution in $sizes {
+    @if $media == $size and $minmax == 'min' {
+      @media only screen and (width >= $resolution) {
+        @content;
+      }
+    }
+    @if $media == $size and $minmax == 'max' {
+      @media only screen and (width < $resolution) {
+        @content;
+      }
+    }
+  }
+}

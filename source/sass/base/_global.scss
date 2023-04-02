@@ -9,7 +9,7 @@ img {
 }
 
 a {
-  color: $basic_font;
+  color: $color-basic_font;
   text-decoration: none;
 }
 
@@ -41,7 +41,7 @@ label {
 }
 
 input:focus {
-  border: 2px solid $basic_font;
+  border: 2px solid $color-basic_font;
 }
 
 iframe {
@@ -68,14 +68,6 @@ h6 {
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
   white-space: nowrap;
-}
-
-// центрирование контейнера
-[class*='__container'] {
-  max-width: 87.5rem;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-  margin: 0 auto;
 }
 
 // плавное затухание

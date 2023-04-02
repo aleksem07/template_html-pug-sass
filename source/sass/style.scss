@@ -1,13 +1,15 @@
 @use './abstract' as *;
 
 //global
-@import 'base/_normalize';
+@import 'vendors/_normalize';
 @import 'base/_global';
+@import 'layout/_wrapper';
 @import 'components/_button';
 
 //blocks
-@import 'layout/_page';
+@import 'base/_page';
 @import 'layout/_header';
 @import 'components/_logo';
 @import 'blocks/_nav';
+
 @import 'layout/_footer';

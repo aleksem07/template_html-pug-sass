@@ -2,8 +2,8 @@
 
 .footer {
   width: 100%;
-  min-width: $min-width;
-  max-width: $desktop-width;
+  min-width: $width-mobile-small;
+  max-width: $width-desktop;
   min-height: 150px;
   margin-top: auto;
   background-color: rgb(161 249 255);
@@ -33,13 +33,13 @@
 //colpyright
 .copyright {
   margin-top: auto;
-  background-color: $bg_copyright;
+  background-color: $color-bg_copyright;
   padding-block: 20px;
   text-align: center;
 }
 
 .copyright span {
-  color: $basic_white;
+  color: $color-light;
   font-size: 15px;
   font-weight: 400;
   line-height: 200%;
